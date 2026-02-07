@@ -1,19 +1,44 @@
-# Binaries for programs and plugins
+# Binaries
 *.exe
 *.exe~
 *.dll
 *.so
 *.dylib
-/bin
+/bin/
+/main
 
-# Test binary, built with `go test -c`
+# Test binary and coverage
 *.test
-
-# Output of the go coverage tool, specifically when used with LiteIDE
 *.out
+coverage.html
 
-# Dependency directories (remove the comment below to include it)
+# Dependency directories
 vendor/
 
-# Idea
-.idea
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Environment files
+.env
+.env.local
+.env.*.local
+config.yaml
+!config.yaml.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+.air.toml
+
+# Docker
+.docker/
